@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 
 
 class createStudentModel(BaseModel):
-    id: str = Field(min_length=10, max_length=10)
+    id: str = Field(min_length=10, max_length=10)  # lock idใว้10ตัว
     first_name: str
     last_name: str
     email: str
